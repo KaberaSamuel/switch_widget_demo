@@ -1,17 +1,20 @@
-# switch_widget_demo
+# Switch Widget Demo
 
-A new Flutter project.
+I made this app to learn how Flutter's `Switch` widget works. The switch changes
+the app between light and dark themes.
 
-## Getting Started
+## How it works
 
-This project is a starting point for a Flutter application.
+- `_isDarkTheme` stores whether dark mode is on.
+- The switch shows that value. When I tap it, `onChanged` updates the value
+  inside `setState`.
+- Flutter rebuilds the screen, and `themeMode` applies the selected theme.
+- The text on the screen also changes to show which theme is active.
 
-A few resources to get you started if this is your first Flutter project:
+## App demo
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+[Watch the app demo](Public/app-demo.mp4) to see the switch change the theme.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run the app
+
+Run `flutter run` from the project folder.
